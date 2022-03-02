@@ -56,6 +56,12 @@ const CourseInput = (props) => {
         className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
       >
         <label>Course Goal</label>
+        {/**
+         * 
+         * 1 - set dynamic inline style
+         * <label style={{cloor: !isValidVariable ? 'red' : 'black' }}>Course Goal</label>
+         * 
+         */}
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
       <Button type="submit">Add Goal</Button>
