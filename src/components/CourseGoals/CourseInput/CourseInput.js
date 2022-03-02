@@ -52,6 +52,13 @@ const CourseInput = (props) => {
 
   return (
     <form onSubmit={formSubmitHandler}>
+       {/**
+         * 
+         * 1 - setting css classes dynamically 
+         * <div className={`form-control ${!isValid ? 'invalid' : '' }`} >
+         * O/P: <div className="form-control invalid"></div>
+         * 
+         */}
       <div
         className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
       >
